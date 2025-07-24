@@ -1,5 +1,8 @@
 # Welcome! 
 
+from user import create_account, log_in
+
+
 print("Welcome to FileBank System!")  
 
 print("1. Create Account") 
@@ -10,9 +13,10 @@ user = input("Enter your choice: ")
 
 if user == "1": 
     print("Creating a new account...")
+    
 
 elif user == "2":
-    print("Logging in...")
+    create_account()
 
 elif user ==  "3":
     print("Thank you for using FileBank. Goodbye! ") 
