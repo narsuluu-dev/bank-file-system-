@@ -1,6 +1,6 @@
 # Welcome! 
 
-from user import create_account, log_in
+import user 
 
 
 print("Welcome to FileBank System!")  
