@@ -17,16 +17,21 @@ def create_account():
 
 def log_in():  
      
-    user_name = input("Enter your username: ") 
+    username = input("Enter your username: ") 
     password  = input("Enter your password: ")  
 
     
     with open ("user_data.txt", "r") as file: 
         for line in file: 
-            saved_name, saved_pass = line.strip().split(",")
+            saved_name, saved_pass = line.strip().split(", ")
+            if username == saved_name and password == saved_pass: 
+                print("Login is successful! ")
+
+                return username 
             
-
-
+           
+    print("Your password or an username do not match. PLease try again")
+    return None 
 
 
 
