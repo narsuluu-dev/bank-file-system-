@@ -41,9 +41,7 @@ def withdraw(username, amount):
 
 
 user = input("Enter your username: ")
-amount = float(input("Enter amount to deposit: "))
-deposit(user, amount)
-
+action = input("Do you want to deposit, withdraw, or check balance?").lower()
 
 
 
