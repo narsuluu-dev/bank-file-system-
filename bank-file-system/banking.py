@@ -51,7 +51,7 @@ elif action == "withdraw":
      amount = float(input("Enter amount to withdraw: ")) 
      withdraw(username, amount)
 
-elif action == "check balance ": 
+elif action == "check balance": 
     print(f"Your balance is: {check_balance(username)}")
 
 else: 
