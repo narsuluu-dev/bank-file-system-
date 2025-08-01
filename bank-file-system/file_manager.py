@@ -17,8 +17,16 @@ def read_balance(username):
     filename = f"{username}.txt"
 
     try: 
+        with open("filename", "r") as file: 
+            balance  = float(file.read()) 
+            return balance 
+        
+    except FileNotFoundError:
+        print("File is not found")
+        return None 
+    
 
-        with ope 
+
 
     
 
