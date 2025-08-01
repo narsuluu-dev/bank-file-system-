@@ -14,7 +14,16 @@ def create_account(username):
 
 def read_balance(username):
 
-    with open(f"{username}.txt")
+    filename = f"{username}.txt"
+
+    try: 
+
+        with ope 
+
+    
+
+
+
 
 
 
