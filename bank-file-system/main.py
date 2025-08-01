@@ -1,7 +1,7 @@
 # Welcome!  
 
 
-import user 
+from user import create_account
 
 
 print("Welcome to FileBank System!")  
@@ -17,7 +17,7 @@ if user == "1":
     
 
 elif user == "2":
-    create_account()
+    create_account() 
 
 elif user ==  "3":
     print("Thank you for using FileBank. Goodbye! ") 
