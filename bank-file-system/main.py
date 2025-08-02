@@ -1,7 +1,7 @@
 # Welcome!  
 
 
-from user import create_account 
+from user import create_account , log_in
 from banking import check_balance , deposit, withdraw
 
 
@@ -19,11 +19,11 @@ print("6. Withdraw")
 user = input("Enter your choice: ") 
 
 if user == "1": 
-    print("Creating a new account...")
+    create_account()
     
 
 elif user == "2":
-    create_account() 
+    log_in()
 
 elif user ==  "3":
     print("Thank you for using FileBank. Goodbye! ") 
