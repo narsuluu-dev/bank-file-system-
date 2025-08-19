@@ -1,11 +1,8 @@
-# Welcome!  
+# Welcome! 
 
 
-from user import create_account , log_in
-from banking import check_balance , deposit, withdraw
-
-
-print("Welcome to FileBank System!")  
+print("Welcome to FileBank System!") 
+print("Chose an option: ") 
 
 print("1. Create Account") 
 print("2. Log In")
@@ -15,6 +12,9 @@ print("5. Deposit")
 print("6. Withdraw")
 
 
+
+from user import create_account , log_in
+from banking import check_balance , deposit, withdraw
 
 user = input("Enter your choice: ") 
 
