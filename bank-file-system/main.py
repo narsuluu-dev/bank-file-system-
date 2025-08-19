@@ -1,6 +1,9 @@
 # Welcome! 
 
 
+from banking import check_balance , deposit, withdraw
+
+
 print("Welcome to FileBank System!") 
 print("Chose an option: ") 
 
@@ -12,18 +15,16 @@ print("5. Deposit")
 print("6. Withdraw")
 
 
-
-from user import create_account , log_in
-from banking import check_balance , deposit, withdraw
-
 user = input("Enter your choice: ") 
 
 if user == "1": 
-    create_account()
+    create_account() 
+    from user import create_account 
     
 
 elif user == "2":
-    log_in()
+    log_in() 
+    from user import log_in 
 
 elif user ==  "3":
     print("Thank you for using FileBank. Goodbye! ") 
@@ -31,13 +32,17 @@ elif user ==  "3":
     exit() 
 
 elif user == "4":
-    check_balance() 
-
+    check_balance()  
+    from banking import check_balance 
+ 
 elif user == "5":
-    deposit()
+    deposit() 
+    from banking import deposit 
+
 
 elif user == "6":
-    withdraw() 
+    withdraw()
+    from banking import withdraw     
 
 else: 
     print("Invalid input. Please choose 1, 2 or 3. ") 
