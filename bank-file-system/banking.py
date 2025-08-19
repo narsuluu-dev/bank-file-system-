@@ -4,7 +4,7 @@ def check_balance(username):
 
     with open(f"{username}.txt", "r") as file:
         balance = file.read()
-        return float(balance)
+        return float(balance) 
     
 
 def deposit(username, amount): 
@@ -56,6 +56,7 @@ elif action == "check balance":
 
 else: 
     print("Invalid action")  
+
 
     
 
