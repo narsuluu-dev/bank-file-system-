@@ -11,6 +11,7 @@ def create_account():
     print("Account has been created successfully!")
 
     return user_name, password 
+
     
 
 
@@ -34,11 +35,11 @@ def log_in():
     return None 
 
 
+if __name__ == "__main__":
+    create_account()
+    log_in() 
 
-create_account()
-log_in() 
-
-
+    # this is just for testing purpose. 
 
 
 

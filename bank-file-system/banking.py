@@ -40,23 +40,6 @@ def withdraw(username, amount):
 
 
 
-username = input("Enter your username: ")
-action = input("Do you want to deposit, withdraw, or check balance?").strip().lower()
-
-if action == "deposit": 
-    amount = float(input("Enter amount to deposit: "))
-    deposit(username, amount)
-
-elif action == "withdraw": 
-     amount = float(input("Enter amount to withdraw: ")) 
-     withdraw(username, amount)
-
-elif action == "check balance": 
-    print(f"Your balance is: {check_balance(username)}")
-
-else: 
-    print("Invalid action")  
-
 
     
 

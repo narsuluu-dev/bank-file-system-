@@ -1,4 +1,5 @@
-# Welcome! 
+# Welcome!
+
 
 print("Welcome to FileBank System!") 
 print("Chose an option: ") 
@@ -22,8 +23,8 @@ if user == "1":
 
 elif user == "2": 
     from user import log_in 
-    
-    log_in()
+    log_in() 
+ 
 
 
 elif user ==  "3":
@@ -45,11 +46,13 @@ elif user == "5":
 elif user == "6":
     from banking import withdraw  
     username = input("Enter your username to withdraw: ")
-    amount = float(input("Enter amount to withdraw: "))
+    amount = float(input("Enter amount to withdraw: "))  
     withdraw(username, amount) 
 
 else: 
-    print("Invalid input. Please choose 1, 2 or 3. ") 
+    print("Invalid input. Please choose 1, 2 or 3. ")  
+
+    
 
 
 

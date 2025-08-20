@@ -23,7 +23,10 @@ def read_balance(username):
         
     except FileNotFoundError:
         print("File is not found")
-        return None  
+        return None   
+    
+
+    
     
 
 
